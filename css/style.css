@@ -28,7 +28,7 @@
 
 .main-container .menu {
 	background:#1a1a1a;
-	width:267px;
+	/*width:267px;*/
 	color: #ffffff;
 	min-width:267px;
 }
@@ -451,4 +451,22 @@
 	font-size:14px;
 	margin-top:20px;
 	white-space:nowrap;
+}
+
+@media all and (max-width:1366px) {
+	.dashboard .dashboard-block {
+		width:320px;
+	}
+
+	.main-container .menu {
+		min-width:220px;
+	}
+
+	.dashboard .dashboard-block.last-processes .dashboard-block-table {
+		height:auto;
+	}
+
+	.main-container .board .top-menu-center input {
+		width:120px;
+	}
 }
