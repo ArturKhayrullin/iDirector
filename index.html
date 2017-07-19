@@ -15,7 +15,7 @@
 	<div class="main-container">
 		<div class="menu">
 
-			<div class="mobile-controls">
+			<div class="mobile-controls mobile-only">
 				<div class="menu-close">
 					<img src="./img/cross-close.png"/>
 					<span>Закрыть</span>
@@ -30,7 +30,7 @@
 
 				</div>
 			</div>
-			<div class="company-info-block">
+			<div class="company-info-block desktop-only">
 				<div class="company-name">
 					ООО "КулонСтрой"
 				</div>
@@ -252,7 +252,27 @@
 			</div>
 
 			<div class="dashboard">
-				<div class="dashboard-block1 dashboard-block">
+
+				<div class="mobile-company-info mobile-only">
+					<div class="mobile-company-name">
+						ООО «Кулон-строй»
+					</div>
+
+					<div class="mobile-company-site">
+						kulon-stroi.ru
+					</div>
+				</div>
+
+				<div class="tabs mobile-only">
+					<span class="active processes">
+						Процессы
+					</span>
+
+					<span class="events">
+						События
+					</span>
+				</div> 
+				<div class="dashboard-block1 dashboard-block in-processes">
 					<div class="current-tasks color-tile">
 						<div class="color-tile-title">Текущие задачи</div>
 						<div class="color-tile-move">
@@ -265,7 +285,19 @@
 						<a href="#" class="color-tile-more">ПОДРОБНЕЕ</a>
 					</div>
 
-					<div class="dashboard-block-table">
+					<div class="overdue-tasks color-tile mobile-only in-processes">
+						<div class="color-tile-title">Просроченные задачи</div>
+						<div class="color-tile-move">
+							<img src="./img/move-icon.svg" width="12.60" height="12.60">
+						</div>
+						<div class="color-tile-numbers">
+							<span class="color-tile-numbers-big">11</span>
+							<span class="color-tile-numbers-small">20%</span>
+						</div>
+						<a href="#" class="color-tile-more">ПОДРОБНЕЕ</a>
+					</div>
+
+					<div class="dashboard-block-table in-processes">
 						<div class="dashboard-block-table-header">
 							<div class="dashboard-block-table-header-title">Последние документы</div>
 							<div class="dashboard-block-table-header-move">
@@ -301,7 +333,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="dashboard-block2 dashboard-block">
+				<div class="dashboard-block2 dashboard-block desktop-only">
 					<div class="overdue-tasks color-tile">
 						<div class="color-tile-title">Просроченные задачи</div>
 						<div class="color-tile-move">
@@ -345,7 +377,7 @@
 					</div>
 				</div>
 
-				<div class="dashboard-block3 dashboard-block blocknote">
+				<div class="dashboard-block3 dashboard-block blocknote in-events">
 					<div class="dashboard-block-table">
 						<div class="dashboard-block-table-header">
 							<div class="dashboard-block-table-header-title">Мой блокнот</div>
@@ -409,7 +441,7 @@
 				</div>
 
 
-				<div class="dashboard-block last-processes">
+				<div class="dashboard-block last-processes in-processes">
 					<div class="dashboard-block-table">
 						<div class="dashboard-block-table-header">
 							<div class="dashboard-block-table-header-title">Последние процессы</div>

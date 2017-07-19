@@ -504,6 +504,43 @@
 	white-space:nowrap;
 }
 
+.dashboard .mobile-company-info {
+	text-align:center;
+	width:100%;
+	margin-bottom:46px;
+}
+
+.dashboard .mobile-company-info .mobile-company-name {
+	font-size:19px;
+	margin-bottom:5px;
+}
+
+.dashboard .mobile-company-info .mobile-company-site {
+	color:#606060;
+	font-size:14.25px;
+}
+
+.mobile-only {
+	display:none;
+}
+
+.tabs {
+	text-align:left;
+	font-size:14px;
+	width:100%;
+	margin-bottom:22px;
+}
+.tabs span {
+	margin-right:10px;
+}
+
+.tabs span.active {
+	font-weight:bold;
+}
+
+.tabs span:hover {
+	cursor:pointer;
+}
 @media all and (max-width:1366px) {
 	.dashboard .dashboard-block {
 		width:320px;
@@ -577,7 +614,88 @@
 	.main-container .menu .mobile-controls .user {
 		display:block;
 	}
+
+	.dashboard {
+		justify-content: center;
+	}
 }
 
 /*FULL MOBILE*/
 
+@media all and (max-width:680px) {
+
+	.mobile-only {
+		display:block;
+	}
+
+	.desktop-only {
+		display:none;
+	}
+
+	.dashboard {
+		padding-left:5%;
+		padding-right:5%;
+	}
+
+	.main-container .board {
+		width:100%;
+	}
+	.dashboard .dashboard-block {
+		width:100%;
+		margin-right:0;
+	}
+
+	.main-container .board .top-menu {
+		padding-left:5%;
+		padding-right:5%;
+	}
+
+	.main-container .board .top-menu-center input {
+		display:none;
+	}
+
+	.main-container .board .top-menu-right .top-menu-right-notifications {
+		display:none;
+	}
+
+	.main-container .board .top-menu-right .top-menu-right-userpic {
+		display:none;
+	}
+
+	.main-container .board .top-menu-right .top-menu-right-username {
+		display:none;
+	}
+
+	.main-container .board .top-menu-right .top-menu-right-downarrow {
+		display:none;
+	}
+
+	.main-container .board .top-menu-right .top-menu-right-exit {
+		padding:0;
+		border:none;
+	}
+
+	.dashboard .dashboard-block .color-tile .color-tile-numbers .color-tile-numbers-big {
+		font-size:43px;
+	}
+
+	.dashboard .dashboard-block .color-tile .color-tile-numbers .color-tile-numbers-small {
+		font-size:12px;
+	}
+
+	.dashboard .dashboard-block .color-tile .color-tile-more {
+		font-size:12px;
+	}
+
+	.dashboard .dashboard-block .color-tile {
+		height:140px;
+	}
+
+	.dashboard .dashboard-block .color-tile .color-tile-more {
+		bottom:9px;
+	}
+
+	.main-container .menu {
+		width:80%;
+	}
+}
