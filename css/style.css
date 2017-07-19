@@ -37,7 +37,46 @@
 	background:#ffffff;
 	flex-grow:1;
 
+}
 
+.main-container .menu .mobile-controls .menu-close {
+	padding-left:26px;
+	margin-top:26px;
+}
+
+.main-container .menu .mobile-controls .user {
+	padding-left:26px;
+	margin-top:26px;
+	margin-bottom:26px;
+	display:none;
+}
+
+.main-container .menu .mobile-controls .user * {
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:10px;
+}
+
+.main-container .menu .mobile-controls .user .userpic {
+	width:35px;
+	height:35px;
+	border-radius:50%;
+	background-size:cover;
+	border:1px solid #4680ff;
+}
+
+.main-container .menu .mobile-controls .menu-close:hover {
+	cursor:pointer;
+}
+
+.main-container .menu .mobile-controls .menu-close * {
+	vertical-align:middle;
+	display:inline-block;
+}
+
+.main-container .menu .mobile-controls .menu-close img {
+	width:20px;
+	margin-right:8px;
 }
 
 .main-container .menu .company-info-block {
@@ -181,6 +220,14 @@
 	margin-right:11px;
 }
 
+.main-container .board .menu-opener {
+	display:none;
+}
+
+.main-container .board .menu-opener:hover {
+	cursor:pointer;
+}
+
 .main-container .board .top-menu-left a:last-of-type {
 	margin-right:0;
 }
@@ -289,6 +336,7 @@
 	display:flex;
 	flex-wrap:wrap;
 	align-content:stretch;
+	justify-content: flex-start;
 }
 
 .dashboard .dashboard-block {
@@ -349,7 +397,7 @@
 	color:#ffffff;
 
 	position:absolute;
-	bottom:16px;
+	bottom:13px;
 	right:26px;
 }
 
@@ -376,6 +424,10 @@
 
 .dashboard .dashboard-block .dashboard-block-table .dashboard-block-table-header .dashboard-block-table-header-move {
 	opacity:0.4;
+}
+
+.dashboard .dashboard-block .dashboard-block-table .dashboard-block-table-header .dashboard-block-table-header-move img {
+	display:block;
 }
 
 .dashboard .dashboard-block .dashboard-block-table .dashboard-block-table-content {
@@ -422,7 +474,6 @@
 .dashboard .dashboard-block .dashboard-block-table .dashboard-block-table-content .table-content-day .time {
 	min-width:100px;
 	display:inline-block;
-	opacity:.33;
 }
 
 .dashboard .dashboard-block .dashboard-block-table .dashboard-block-table-content .table-content-day .table-content-row {
@@ -469,4 +520,64 @@
 	.main-container .board .top-menu-center input {
 		width:120px;
 	}
+
+	.main-container .board .top-menu-left a {
+		font-size:15px;
+		margin-right:10px;
+	}
+
+	.main-container .board .top-menu-center input {
+		font-size:15px;
+	}
 }
+
+@media all and (max-width:1290px) {
+	.dashboard .dashboard-block {
+		width:300px;
+	}
+}
+
+@media all and (max-width:1120px) {
+	.main-container .board .top-menu-left a {
+		font-size:12px;
+		margin-right:8px;
+	}
+	.main-container .board .top-menu-center input {
+		font-size:12px;
+	}	
+}
+
+@media all and (max-width:1060px) {
+	.main-container .board .top-menu-left  {
+		display:none;
+	}
+
+
+
+	.main-container .board .top-menu-center input {
+		font-size:15px;
+		width:200px;
+	}	
+}
+
+@media all and (max-width:940px) {
+	.main-container .menu {
+		position:fixed;
+		top:0;
+		left:0;
+		bottom:0;
+		z-index:100;
+		display:none;
+	}
+
+	.main-container .board .menu-opener {
+		display:block;
+	}
+
+	.main-container .menu .mobile-controls .user {
+		display:block;
+	}
+}
+
+/*FULL MOBILE*/
+
