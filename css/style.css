@@ -22,6 +22,7 @@
 	display:flex;
 	justify-content: center;
 	max-width:1920px;
+	position:relative;
 }
 
 
@@ -599,19 +600,21 @@
 
 @media all and (max-width:940px) {
 	.main-container .menu {
-		position:fixed;
+		position:absolute;
 		top:0;
 		left:0;
-		bottom:0;
 		z-index:100;
 		display:none;
+		min-height:100%;
 	}
 
 	.main-container .board .menu-opener {
 		display:block;
 	}
 
-	.main-container .menu .mobile-controls .user {
+
+
+	.main-container .menu .mobile-controls {
 		display:block;
 	}
 
@@ -697,5 +700,14 @@
 
 	.main-container .menu {
 		width:80%;
+		min-height:100%;
+	}
+
+	.main-container {
+		position:relative;
+	}
+
+	.main-container .menu .mobile-controls .user {
+		display:block;
 	}
 }

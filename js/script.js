@@ -1,7 +1,8 @@
 $(document).ready(function() {
 	$('.menu-item').accordion({
       collapsible: true,
-      active: false
+      active: false,
+      heightStyle: "content"
     });
 
     if ($(window).width()<=680) {
