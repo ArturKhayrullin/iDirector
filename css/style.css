@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'Graphik LCG Regular';
-	src: url(../fonts/GraphikLCG/GraphikLCG-Regular.otf);
+	src: url(../fonts/GraphikLCG/GraphikLCG-Regular.woff);
 }
 
 @font-face {
 	font-family: 'Graphik LCG Medium';
-	src: url(../fonts/GraphikLCG/GraphikLCG-Medium.otf);
+	src: url(../fonts/GraphikLCG/GraphikLCG-Medium.woff);
 }
 
 * {
@@ -542,6 +542,25 @@
 .tabs span:hover {
 	cursor:pointer;
 }
+
+
+.menu .fixed-wrapper {
+	min-width:inherit;
+	position:fixed;
+}
+
+.branding {
+	text-align:center;
+}
+
+.branding * {
+	vertical-align:middle;
+	font-size:12px;
+}
+
+.branding img {
+	margin-right:10px;
+}
 @media all and (max-width:1366px) {
 	.dashboard .dashboard-block {
 		width:320px;
@@ -709,5 +728,9 @@
 
 	.main-container .menu .mobile-controls .user {
 		display:block;
+	}
+
+	.menu .fixed-wrapper {
+		position:relative;
 	}
 }
