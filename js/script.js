@@ -1,8 +1,9 @@
 $(document).ready(function() {
-	$('.menu-item').accordion({
+	$('.menu-item:not(.no-accordion)').accordion({
       collapsible: true,
       active: false,
-      heightStyle: "content"
+      heightStyle: "content",
+      header: '.accordion'
     });
 
     if ($(window).width()<=680) {

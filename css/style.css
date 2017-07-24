@@ -544,13 +544,14 @@
 }
 
 
-.menu .fixed-wrapper {
+/*.menu .fixed-wrapper {
 	min-width:inherit;
 	position:fixed;
-}
+}*/
 
 .branding {
 	text-align:center;
+	margin-top:52px;
 }
 
 .branding * {
