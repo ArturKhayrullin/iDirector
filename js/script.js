@@ -28,9 +28,15 @@ $(document).ready(function() {
 
     $(".menu-opener").click(function() {
     	$(".main-container .menu").show();
+        if ($(window).width()<=680) {
+            $(".board").css("position","fixed");
+        }
     });
 
     $(".main-container .menu .mobile-controls .menu-close").click(function() {
     	$(".main-container .menu").hide();
+        if ($(window).width()<=680) {
+            $(".board").css("position","relative");
+        }
     });
 });
